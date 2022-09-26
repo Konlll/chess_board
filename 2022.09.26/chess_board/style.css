@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 40px auto;
+    width: 50%;
+}
+
+.border{
+    width: calc(58px*8);
+    border: 10px solid darkred;
+}
+
+.row {
+    width: calc(56.5px*8);
+}
+
+.row .col{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.row div{
+    display: inline-block;
+}
+
+.container .row:first-child div,
+.container .row:last-child div{
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    text-align: center;
+}
+
+.container .row:first-child div:first-child,
+.container .row:last-child div:first-child{
+    margin-left: 12px;
+}
+
+.col img{
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row:nth-child(even) .col:nth-child(even),
+.row:nth-child(odd) .col:nth-child(odd){
+    background:#252525;
+}
+.row:nth-child(even) .col:nth-child(odd),
+.row:nth-child(odd) .col:nth-child(even){
+    background:#fff;
+}
+
+.n_feher{
+    width: 35px !important;
+}
+
+.n_fekete{
+    width: 30px !important;
+}
+
+.n_fekete_futo{
+    width: 22px !important;
+}
